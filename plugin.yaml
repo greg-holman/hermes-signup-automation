@@ -1,0 +1,20 @@
+name: signup-automation
+version: 0.1.0
+manifest_version: 2
+api_version: 1
+description: Model-blind account signup with generated passwords and TOTP enrollment
+python_dependencies:
+  - bitwarden-sdk==2.1.0
+  - zxing-cpp==3.1.1
+  - Pillow>=10,<13
+  - dkimpy==1.1.8
+provides_tools:
+  - signup_prepare_login
+  - signup_fill_registration
+  - signup_capture_totp
+  - signup_fill_totp
+  - signup_fill_login
+  - signup_arm_email_challenge
+  - signup_fill_email_code
+provides_hooks:
+  - pre_llm_call

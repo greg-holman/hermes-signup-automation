@@ -1,0 +1,6 @@
+{
+  "bitwarden_project_id": "",
+  "bitwarden_organization_id": "",
+  "bitwarden_api_url": "https://api.bitwarden.com",
+  "bitwarden_identity_url": "https://identity.bitwarden.com"
+}
